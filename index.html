@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Web de información referente a la red de movilidad ferroviaria del área de Berlín.">
+	<meta name="author" content="Dídac Mangut Soria">
+	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="style/estilo.css">
+	<!-- IPAD -->
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width:810px) and (max-width:1080px)" href="style/medium_layout.css">
+	<!-- GALAXY NOTE 20 LINUX -->
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:412px)" href="style/small_layout.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<base href="index.html">
+</head>
+
+<!--Semantica : información que define o describe el contenido, función o sección que contienen. -->
+
+<body>
+	<header>
+		<div>
+			<nav>
+				<img src="src/logo.png" class="logos">
+			<ul>
+				
+					<a href="#" class="dropbtn"><button id="myButton" class="dropbtn">Deutsche-Bahn</button></a>
+						<div id="myDropdown" class="dropdown-content">
+							<a href="https://assets.static-bahn.de/dam/jcr:71e54c1d-3607-43af-9093-8c60486465b4/220914_Liniennetz%20ICE%20IC%202023%20f%C3%BCr%20Buchungsstart.pdf">ICE</a>
+							<a href="https://www.bahn.com/es/trenes/cercanias" target="_blank">Regionalbahn</a>
+							<a href="https://www.raileurope.com/en/trains/eurocity" target="_blank">Intercity Eurocity</a>
+						</div>
+				<a href="index.html" class="dropbtn"><button class="dropbtn" id="myButton">Home</button></a>
+				<a href="files/sbahn.html" class="dropbtn"><button class="dropbtn" id="myButton">S-Bahn</button></a>
+				<a href="files/ubahn.html"><button class="dropbtn" id="myButton">U-Bahn</button></a>
+				
+				<script type="text/javascript">
+					
+					document.getElementById("myButton").onclick = function() {myFunction()};
+					function myFunction(){
+						document.getElementById("myDropdown").classList.toggle("show");
+						}
+
+
+
+				</script>
+					
+				
+			</ul>	
+			</nav>
+		</div>
+	</header>
+
+	<main>
+
+
+	<div class="texto1">
+		<h2 class="texto1"><span class="colort1">Información de movilidad ferroviaria</span></h2>
+	</div>
+
+
+	
+	<div class="body1">
+		<img src="src/imagen1.jpeg" id="img1" alt="Imagen andén con trenes en Berlín.">
+	</div>
+
+	<div class="titulo1">
+		<h2>Descubre la actualidad en los servicios Deutsche Bahn</h2>
+		<h3 style="font-weight: 100; text-decoration: underline;">Articulos relacionados</h3>		
+	</div>
+
+	<div class="articulos">
+		
+		<div class="articulo1">
+			<div class="articuloImagen">
+			<img src="src/i2.jpg" class="aimg" alt="Imagen de un tren ICE modelo 3M con un fondo nevado.">
+			</div>
+				<div class="a1texto">
+					<blockquote style="text-align: center;" class="uno">
+						<h3><strong>¡El horario de invierno ya está aquí!</strong></h3>
+						<p>El nuevo horario de invierno es válido a partir del 11 de diciembre de 2022, aunque los billetes ya pueden comprarse.</p>
+						<h4><strong>Planifique y ahorre</strong></h4>
+						<p style="padding-bottom: 21px;">Asegúrese económicos billetes de precio reducido para los viajes que vaya a realizar a partir del 11 de diciembre. Por ejemplo, viaje siempre a un precio económico con la <a href="https://www.bahn.com/es/ofertas/super-tarifa-de-precio-reducido" target="_blank"><u>super tarifa de precio reducido</u></a> desde 17,90 euros.</p>
+						<a href="https://reiseauskunft.bahn.de/bin/query.exe/hn" target="_blank"><div class="buscar_conexion">
+							<p class="buscar_conexion"><strong>Buscar conexión ahora</strong></p>
+						</div></a>
+						
+					</blockquote>
+				</div>
+
+				<div class="modales">
+					
+					<dialog id="ms">
+						<blockquote style="text-align: center;">
+						<h3><strong>¡El horario de invierno ya está aquí!</strong></h3>
+						<p>El nuevo horario de invierno es válido a partir del 11 de diciembre de 2022, aunque los billetes ya pueden comprarse.</p>
+						<h4><strong>Planifique y ahorre</strong></h4>
+						<p style="padding-bottom: 21px;">Asegúrese económicos billetes de precio reducido para los viajes que vaya a realizar a partir del 11 de diciembre. Por ejemplo, viaje siempre a un precio económico con la <a href="https://www.bahn.com/es/ofertas/super-tarifa-de-precio-reducido" target="_blank"><u>super tarifa de precio reducido</u></a> desde 17,90 euros.</p>
+						<a href="https://reiseauskunft.bahn.de/bin/query.exe/hn" target="_blank"><div class="buscar_conexion1">
+							<p class="buscar_conexion"><strong>Buscar conexión ahora</strong></p>
+						</div></a>
+						
+					</blockquote>
+						<button id="close" class="uno" onclick="document.getElementById('ms').close()">Cerrar</button>
+					</dialog>
+					<button id="show" class="uno" onclick="document.getElementById('ms').show()">Mostrar articulo</button>
+				</div>
+
+				
+
+		</div>
+		<div class="articulo2" id="a2">
+			<img src="src/i3.jpg" class="aimg" alt="Imagen de una chica en el interior del metro llevando mascarilla.">
+				<div class="a1texto">
+					<blockquote style="text-align: center;" class="uno">
+						<h3><strong>Viajar en el tren durante la pandemia del coronavirus.</strong></h3>
+						<p>¿Qué necesitan saber los viajeros? Hemos resumido la información más importante para ayudarlo a planificar un viaje seguro y relajante.</p>	
+						<h4><strong>Use una máscara FFP2 o de grado médico cuando viaje en nuestros trenes.</strong></h4>		
+						<p>Para cumplir con los requisitos de salud pública, use una máscara FFP2 a bordo de trenes de larga distancia.  la aplicación hasta 10 minutos después de la salida (también en caso de retraso).</p>
+						<a href="https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-bundeslaender-1745198" target="_blank"><div class="buscar_conexion">
+							<p class="buscar_conexion"><strong>Regulación en cada distrito</strong></p>
+						</div></a>
+					</blockquote>
+				</div>
+
+				<div class="modales">
+					
+					<dialog id="ms1">
+						<blockquote style="text-align: center;">
+						<h3><strong>Viajar en el tren durante la pandemia del coronavirus.</strong></h3>
+						<p>¿Qué necesitan saber los viajeros? Hemos resumido la información más importante para ayudarlo a planificar un viaje seguro y relajante.</p>	
+						<h4><strong>Use una máscara FFP2 o de grado médico cuando viaje en nuestros trenes.</strong></h4>		
+						<p>Para cumplir con los requisitos de salud pública, use una máscara FFP2 a bordo de trenes de larga distancia.  la aplicación hasta 10 minutos después de la salida (también en caso de retraso).</p>
+						<a href="https://www.bundesregierung.de/breg-de/themen/coronavirus/corona-bundeslaender-1745198" target="_blank"><div class="buscar_conexion1">
+							<p class="buscar_conexion"><strong>Regulación en cada distrito</strong></p>
+						</div></a>
+					</blockquote>
+						<button id="close" class="uno" onclick="document.getElementById('ms1').close()">Cerrar</button>
+					</dialog>
+					<button id="show" class="uno" onclick="document.getElementById('ms1').show()">Mostrar articulo</button>
+				</div>
+
+		</div>
+		
+		<div class="articulo3" id="a3">
+			<img src="src/i4.jpeg" class="aimg" alt="Imagen donde se muestra la aplicación de Deutsche Bahn.">
+				<div class="a1texto">
+					<blockquote style="text-align: center;" class="uno">
+						<h3><strong>DB Navigator. Así se viaja hoy en día.</strong></h3>
+						<p>Descubra las numerosas funciones de la aplicación DB Navigator de Deutsche Bahn. Compre su billete sin contacto y reciba información relevante durante todo el viaje.</p>			
+						<p style="padding-bottom: 27px;">Desde enero de 2022, en el transporte de larga distancia ya no se pueden comprar billetes a los azafatos/as de tren. Por eso debe comprar su billete digital de larga distancia online o en la aplicación hasta 10 minutos después de la salida (también en caso de retraso).</p>
+						<a href="https://play.google.com/store/apps/details?id=de.hafas.android.db&dbkanal_007=teaserBlock_3-2_button_ParaAndroid&pli=1" target="_blank"><div class="buscar_conexion">
+							<p class="buscar_conexion"><strong>Descarga la aplicación</strong></p>
+						
+						</div></a>
+					</blockquote>
+				</div>
+
+				<div class="modales">
+					
+					<dialog id="ms2">
+						<blockquote style="text-align: center;">
+						<h3><strong>DB Navigator. Así se viaja hoy en día.</strong></h3>
+						<p>Descubra las numerosas funciones de la aplicación DB Navigator de Deutsche Bahn. Compre su billete sin contacto y reciba información relevante durante todo el viaje.</p>			
+						<p style="padding-bottom: 27px;">Desde enero de 2022, en el transporte de larga distancia ya no se pueden comprar billetes a los azafatos/as de tren. Por eso debe comprar su billete digital de larga distancia online o en la aplicación hasta 10 minutos después de la salida (también en caso de retraso).</p>
+						<a href="https://play.google.com/store/apps/details?id=de.hafas.android.db&dbkanal_007=teaserBlock_3-2_button_ParaAndroid&pli=1" target="_blank"><div class="buscar_conexion1">
+							<p class="buscar_conexion"><strong>Descarga la aplicación</strong></p>
+						
+						</div></a>
+					</blockquote>
+						<button id="close" class="uno" onclick="document.getElementById('ms2').close()">Cerrar</button>
+					</dialog>
+					<button id="show" class="uno" onclick="document.getElementById('ms2').show()">Mostrar articulo</button>
+				</div>
+		</div>
+	</div>
+
+	</main>
+
+ <footer class="footer-distributed" style="margin-top: 10%;">
+
+      <div class="footer-right">
+
+        <a href="https://www.youtube.com/user/DeutscheBahnKonzern"><img src="src/yt.png"></a>
+        <a href="https://twitter.com/DB_Bahn?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="src/tw.png"></a>
+        <a href="https://www.facebook.com/DBPersonenverkehr/"><img src="src/face.png"></a>
+        <a href="https://www.instagram.com/deutschebahn/?hl=es"><img src="src/insta.png"></a>
+
+      </div>
+
+      <div class="footer-left">
+
+        <p class="footer-links">
+          <a class="link-1" href="index.html">Inicio</a>
+
+          <a href="https://bmdv.bund.de/EN/Home/home.html" target="_blank">Ministerio federal de transportes</a>
+
+          <a href="https://bmdv.bund.de/EN/Meta/Legal-Notice-Terms-and-Conditions/legal-notice-terms-and-conditions.html">Condiciones legales</a>
+
+          <a href="#">Protección de datos</a>
+       
+          <a href="form.html">Contacto</a>
+        </p>
+
+        <p>Deutsche Bahn &copy; 2022</p>
+      </div>
+
+    </footer>
+</body>
+</html>
