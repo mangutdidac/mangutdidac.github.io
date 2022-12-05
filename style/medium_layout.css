@@ -1,0 +1,48 @@
+span.colort1{
+	font-size: 1em;
+}
+h2{
+	font-size: 120%;
+}
+div.titulo1 h2, h3{
+	font-size: 1em;
+}
+img.aimg{
+	padding: 0%;
+	margin-bottom: 3%;
+}
+div.titulo1{
+	margin-top: 25%;
+}
+div.a1texto{
+	visibility: hidden;
+	height:5px;
+}
+.footer-distributed{
+	width: 100%;
+}
+div.modales{
+	visibility: visible;
+	margin-left: 23%;
+}
+#f1{
+	width: 72%;
+	margin-left: 14%;
+	border-radius:5px;
+}
+li.metros{
+	margin: 2%;
+	margin-right: 5%;
+	margin-left: 4%;
+	font-size: 14px;
+}
+li.metros1{
+	margin-right:1.2%;
+}
+pre{
+	display: none;
+}
+div.ex2{
+	width: 75%;
+	margin-left: 12.5%
+}

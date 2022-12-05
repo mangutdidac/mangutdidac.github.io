@@ -1,0 +1,66 @@
+span.colort1{font-size: 0.9em;}
+ul{display: flex;}
+div.titulo1 h2, h3{font-size: 1em;}
+div.titulo1{margin-top: 50%;}
+img.aimg{
+	padding: 0%;
+	margin-bottom: 3%;
+}
+a, .dropbtn{
+	width: 100%;
+	font-weight: 500;
+	padding:10px 5px;
+}
+div.body1, div.body2{
+	width: 90%;
+	margin-left: 5%;
+}
+#f1{
+	width: 95%;
+	margin-left: 2.5%;
+}
+div.mapa{
+	width: 95%;
+	margin-left: 2.5%;
+}
+blockquote.uno{display: none;}
+div.modales{visibility: visible;}
+div.articulos{width: 95%; margin-left: 2.5%;}
+button.uno{
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 10%;
+	margin-bottom: 2%;
+	font-size: 12px;
+}
+div.a1texto{display: none;}
+div.buscar_conexion1{
+	width: 70%;
+	margin-top: -4%;
+	margin-left: -0.5%;
+	height: 41px;
+}
+p.uno{font-size: 15px;}
+div.ex2{width: 97%; margin-left: 1%;}
+div.horario{
+	margin-top: 15%;
+	width: 74%;
+	margin-left: 12%;
+}
+pre{display: none;}
+#show1{
+	margin-left: 0%;
+	margin-bottom: 5%;
+}
+ul.metros{display: inline-block;}
+li.metros1{padding-right: 20%;}
+#myDropdown{
+	margin-top: 14%;
+	width:29%;
+	margin-left: 1%;
+	background-color: #e9e9ed;
+	height: 14%;
+}
+.dropdown-content a{
+	font-size: 14px;
+}
