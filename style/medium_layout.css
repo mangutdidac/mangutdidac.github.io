@@ -23,7 +23,7 @@ div.a1texto{
 }
 div.modales{
 	visibility: visible;
-	margin-left: 23%;
+	
 }
 #f1{
 	width: 72%;
@@ -46,3 +46,17 @@ div.ex2{
 	width: 75%;
 	margin-left: 12.5%
 }
+.dropdown-content{
+	left: 12%;
+	bottom: 82.2%;
+}
+span.color1{
+	padding: 22px;
+}
+#show, #show1, #show2{
+	margin-left: 20%;
+}
+#f1{margin-left: 11%;}
+form{width: 50%; margin-left: 25%;}
+input.benviar{margin-left: 47%;}
+.volver{width: 10%;}

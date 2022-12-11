@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,99 @@
 	<title>Formulario de contacto</title>
 </head>
 <body>
+	<div class="texto1">
+		<h2 class="texto1"><span class="colort1">Formulario de registro de incidencias</span></h2>
+	</div>
 
+<!-- Iniciamos el formulario enviando las respuestas a send.php y comenzando con un fieldset de datos personales -->
+
+	<form action="send.php" method="post">
+    <fieldset>
+	    <legend>Datos personales</legend>
+	    <label for="nombre">Nombre</label><br>
+	    <input type="text" id="nombre" name="nombre"required>
+	    <br><br>
+	    <label for="apellidos">Apellidos</label><br>
+	    <input type="text" id="apellidos" name="apellidos" required>
+	    <br><br>
+	    <label for="email">Email</label><br>
+	    <input type="email" id="email" name="email" size="24" maxlength="256" required>
+	    <br><br>
+	    <label for="password">Contraseña</label><br>
+	    <input type="password" id="password" name="password" size="16" maxlength="20" required>
+	    <br><br>
+	    <label for="dni">DNI</label><br>
+	    <input type="text" name="dni" id="dni" size="10" maxlength="9" required>
+	    <br><br>
+	    <label for="telefono">Numero de telefono</label><br>
+	    <input type="number" name="telefono" id="telefono" size="10" maxlength="9" required>
+    </fieldset>
+
+<!-- Fieldset para el apartado de incidencias -->
+    <fieldset>
+	    <legend>Incidencia</legend>
+
+	    <label for="sistema">Sistema</label> 
+		<br><br>
+			<select id="sistema" name="sistema" size="2">
+			<option value="sbahn" selected="selected">S-Bahn</option>
+			<option value="ubahn">U-Bahn</option>
+			</select>
+		<br><br>
+
+	    <label for="linea">Linea</label><br>
+			<br>
+			<select id="linea" name="linea">
+			<option value="linea1">Linea 1</option>
+			<option value="linea2">Linea 2</option>
+			<option value="linea3">Linea 3</option>
+			<option value="linea4">Linea 4</option>
+			<option value="linea5">Linea 5</option>
+			<option value="linea6">Linea 6</option>
+			<option value="linea7">Linea 7</option>
+			<option value="linea8">Linea 8</option>
+		</select>
+
+	    <br><br>
+	    <label for="incidencia">Tipo de incidencia</label><br>
+	    		<input class="input" id="incidencia" name="errores_horarios" type="radio" value="errores_horarios"> Errores en los horarios
+				<input class="input" id="incidencia" name="agresion_fisica" type="radio" value="agresion_fisica"> Agresión física
+				<input class="input" id="incidencia" name="agresion_verbal" type="radio" value="agresion_verbal"> Agresión verbal
+				<input class="input" id="incidencia" name="mal_uso" type="radio" value="mal_uso">	Mal uso de las instalaciones
+				<input class="input" id="incidencia" name="compra" type="radio" value="compra"> Errores de compra de billetes
+				<input class="input" id="incidencia" name="otros" type="radio" value="otros"> Otros
+			</div>
+	    <br><br>
+	    
+	    <label for="date">Fecha del incidente</label><br>
+	    <input type="date" id="date" name="date" required pattern="\d{4}-\d{2}-\d{2}" max="19-12-2022">
+	    <br><br>
+	    
+	    <label for="textarea">Breve explicación de lo acontecido</label>
+	    <textarea id="textarea" name="textarea" rows="4" cols="30" required></textarea>
+	    
+	    <label for="file">Inserir documento adjunto</label><br>
+	    <input type="file" name="file" id="file">
+	    <br><br>
+	    <div style="margin-top: 5%">
+	    <input type="checkbox" name="condiciones" required><a href="politica_privacidad.html">Acepto la política de privacidad</a>
+	    <label for="condiciones"></label>
+	    </div>
+    </fieldset>
+
+<!-- Botones para borrar y enviar el formulario rellenado --> 
+	    <div style="margin-top: 5%;">
+	    	<input type="reset" name="reset" value="Borrar datos">
+	    	<input type="submit" name="enviar" class="benviar" value="Enviar incidencia">
+	    </div>
+	</form>
+
+<!-- Boton para volver al índice -->
+
+	<div class="volver">
+		<a href="../index.html">
+		Volver al inicio
+		</a>
+	</div>
 </body>
 </html>

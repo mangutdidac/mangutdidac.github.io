@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ES">
 <head>
-	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Web de información referente a la red de movilidad ferroviaria del área de Berlín.">
 	<meta name="author" content="Dídac Mangut Soria">
@@ -17,32 +17,25 @@
 	<header>
 		<div>
 			<nav>
-				<img src="src/logo.png" class="logos">
-			<ul>
+				<a href="index.html"><img src="src/logo.png" class="logos" alt="Imagen del logo de Deutsche bahn"></a>
+		
 				
-					<a class="dropbtn"><button id="myButton" class="dropbtn">Deutsche-Bahn</button></a>
+					<button id="myButton" class="dropbtn">Deutsche-Bahn</button>
 						<div id="myDropdown" class="dropdown-content">
 							<a href="https://assets.static-bahn.de/dam/jcr:71e54c1d-3607-43af-9093-8c60486465b4/220914_Liniennetz%20ICE%20IC%202023%20f%C3%BCr%20Buchungsstart.pdf">ICE</a>
 							<a href="https://www.bahn.com/es/trenes/cercanias" target="_blank">Regionalbahn</a>
 							<a href="https://www.raileurope.com/en/trains/eurocity" target="_blank">Intercity Eurocity</a>
 						</div>
-				<a href="index.html" class="dropbtn"><button class="dropbtn" id="myButton">Home</button></a>
-				<a href="files/sbahn.html" class="dropbtn"><button class="dropbtn" id="myButton">S-Bahn</button></a>
-				<a href="files/ubahn.html"><button class="dropbtn" id="myButton">U-Bahn</button></a>
+				<a href="index.html" class="dropbtn">Home</a>
+				<a href="files/sbahn.html" class="dropbtn">S-Bahn</a>
+				<a href="files/ubahn.html" class="dropbtn">U-Bahn</a>
 				
-				<script type="text/javascript">
-					
+				<script>
 					document.getElementById("myButton").onclick = function() {myFunction()};
 					function myFunction(){
 						document.getElementById("myDropdown").classList.toggle("show");
 						}
-
-
-
 				</script>
-					
-				
-			</ul>	
 			</nav>
 		</div>
 	</header>
@@ -68,7 +61,7 @@
 	</div>
 
 	<div class="mapa">
-		<img src="src/m1.jpg" class="m1">
+		<img src="src/m1.jpg" class="m1" alt="imagen de un mapa de lineas ferroviarias suburbanas">
 	</div>
 </section>
 
@@ -91,41 +84,40 @@
 					</blockquote>
 						<button id="close1" onclick="document.getElementById('ms').close()">Cerrar</button>
 					</dialog>
-					<button id="show1" onclick="document.getElementById('ms').show()">Mostrar más</button>
+					<button id="show5" onclick="document.getElementById('ms').show()">Mostrar más</button>
 		</div>
 	</div>
 
 </section>
 
-
+<!-- Lista de los sistemas u-bahn de alemania -->
 
 	<div class="titulo1">
 		<h2>Sistemas U-Bahn de Alemania</h2>	
 	</div>
-<section>
+
 	<div class="lista_metros">
 		<ul class="metros">
-			<li class="metros"><a href="https://mapa-metro.com/es/Alemania/Hamburgo/Hamburgo-U-Bahn-mapa.htm" target="_blank">Metro de Hamburgo</a></li>
-			<li class="metros"><a href="https://mapa-metro.com/es/Alemania/Bochum/Bochum-Stadtbahn-mapa.htm" target="_blank">Metro de Bochum</a></li>			
-			<li class="metros"><a href="https://mapa-metro.com/es/alemania/frankfurt/frankfurt-u-bahn-mapa.htm" target="_blank">Metro de Frankfurt</a></li>
-			<li class="metros"><a href="https://mapa-metro.com/es/Alemania/Hanover/Hanover-Stadtbahn-mapa.htm" target="_blank">Metro de Hanover</a></li>
-			<li class="metros"><a href="https://mapa-metro.com/es/alemania/munich/munich-u-bahn-mapa.htm" target="_blank">Metro de Munich</a></li>
-			<li class="metros"><a href="https://mapa-metro.com/es/Alemania/Nuremberg/Nuremberg-U-Bahn-mapa.htm" target="_blank">Metro de Nuremberg</a></li>
+			<li class="metros"><a href="https://mapa-metro.com/es/Alemania/Hamburgo/Hamburgo-U-Bahn-mapa.htm" target="_blank"><span class="color1">Metro de Hamburgo</span></a></li>
+			<li class="metros"><a href="https://mapa-metro.com/es/Alemania/Bochum/Bochum-Stadtbahn-mapa.htm" target="_blank"><span class="color1">Metro de Bochum</span></a></li>			
+			<li class="metros"><a href="https://mapa-metro.com/es/alemania/frankfurt/frankfurt-u-bahn-mapa.htm" target="_blank"><span class="color1">Metro de Frankfurt</span></a></li>
+			<li class="metros"><a href="https://mapa-metro.com/es/Alemania/Hanover/Hanover-Stadtbahn-mapa.htm" target="_blank"><span class="color1">Metro de Hanover</span></a></li>
+			<li class="metros"><a href="https://mapa-metro.com/es/alemania/munich/munich-u-bahn-mapa.htm" target="_blank"><span class="color1">Metro de Munich</span></a></li>
+			<li class="metros"><a href="https://mapa-metro.com/es/Alemania/Nuremberg/Nuremberg-U-Bahn-mapa.htm" target="_blank"><span class="color1">Metro de Nuremberg</span></a></li>
 			
 		</ul>	
 	</div>
-</section>
-	
 
 
+<!-- Pie de pagina con información básica -->
  <footer class="footer-distributed">
 
       <div class="footer-right">
 
-        <a href="https://www.youtube.com/user/DeutscheBahnKonzern"><img src="src/yt.png"></a>
-        <a href="https://twitter.com/DB_Bahn?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="src/tw.png"></a>
-        <a href="https://www.facebook.com/DBPersonenverkehr/"><img src="src/face.png"></a>
-        <a href="https://www.instagram.com/deutschebahn/?hl=es"><img src="src/insta.png"></a>
+        <a href="https://www.youtube.com/user/DeutscheBahnKonzern"><img src="src/yt.png" alt="Icono youtube"></a>
+        <a href="https://twitter.com/DB_Bahn?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="src/tw.png" alt="Icono twitter"></a>
+        <a href="https://www.facebook.com/DBPersonenverkehr/"><img src="src/face.png" alt="Icono facebook"></a>
+        <a href="https://www.instagram.com/deutschebahn/?hl=es"><img src="src/insta.png" alt="Icono instagram"></a>
 
       </div>
 
@@ -137,10 +129,8 @@
           <a href="https://bmdv.bund.de/EN/Home/home.html" target="_blank">Ministerio federal de transportes</a>
 
           <a href="https://bmdv.bund.de/EN/Meta/Legal-Notice-Terms-and-Conditions/legal-notice-terms-and-conditions.html">Condiciones legales</a>
-
-          <a href="#">Protección de datos</a>
        
-          <a href="form.html">Contacto</a>
+          <a href="files/form.html">Formulario de incidencias</a>
         </p>
 
         <p>Deutsche Bahn &copy; 2022</p>

@@ -5,9 +5,23 @@
 	img{ width: 100%; height: auto; object-fit: contain;}
 	div{ width: auto; height: 100%;}
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
 html{
 	font-family: arial;
 	background-color: whitesmoke;
+}
+button{
+	font-family: arial;
+	font-size: 17px;
+}
+nav a{
+	text-decoration: none;
 }
 img{
 	display: block;
@@ -44,6 +58,8 @@ p{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  left: 5%;
+  bottom: 80%;
 }
 
 .dropdown-content a {
@@ -60,22 +76,31 @@ p{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-a, .dropbtn {
+
+#myButton{
+	height: 47px; 
+
+}
+.dropbtn {
   color: black;
   text-align: center;
   padding: 14px 16px;
   font-weight: 700;
   border: 0;
+  background-color: whitesmoke;
+  border-radius:5px;
+  margin: 0px 5px 0px 5px; 
 }
-#myButton:hover{
+.dropbtn:hover{
 	background-color: red;
 	color: white;
 	border: 0;
 }
+
 .show{display: block;}
 
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover {
   background-color: red;
   color: white;
 }
@@ -180,7 +205,7 @@ div.buscar_conexion{
 	margin-top:5%;
 	position: absolute;
 	border-radius: 5px;
-	margin-top: -1%;
+	margin-top: 1%;
 }
 p.buscar_conexion{
 	position: absolute;
@@ -215,8 +240,8 @@ div.lista_metros{
 }
 li.metros{
 	margin: 15px;
-	margin-right:5%;
-	margin-left: 0%;
+	margin-right:6.5%;
+	margin-left: 1%;
 }
 div.horario{
 	width: 65%;
@@ -229,9 +254,13 @@ div.horario{
 	padding: 1%; 
 }
 #f1{
-	width: 35%;
-	margin-left: 32.5%;
-	border-radius: 5px;
+  width: 35%;
+  margin-left: 32.5%;
+  border-radius: 5px;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(../src/border.png) 30 stretch;
+
 }
 
 .footer-distributed {
@@ -276,9 +305,10 @@ div.horario{
   display: inline-block;
   padding-right: 5px;
 }
-#show1{
-	margin-left: -35%;
+blockquote{
+	padding-bottom: 10px;
 }
+
 #show2{
 	
 }
@@ -357,6 +387,35 @@ div.buscar_conexion1{
 }
 li.metros1{
 	margin: 15px;
-	margin-right:3.2%; 
+	margin-right:5.2%; 
 }
 p.uno{font-size: 18px;}
+div.titulo2{text-align: center;}
+form{
+	width: 20%; 
+	margin-left: 40%;
+}
+fieldset{padding: 4%; display: grid; margin-top: 10%;}
+label{text-align: center;padding: 4%;}
+#incidencia{margin-top: 5%; margin-left: 72%;}
+span.color1:hover{
+	background-color: #ec5f5f;
+	color: white;
+}
+span.color1{
+	padding: 5px;
+}
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 stretch;
+}
+input.benviar{margin-left: 45%;}
+.volver{
+	margin-left: 5%;
+	background-color: #ec5f5f;
+	width: 6%;
+	border-radius: 3px;
+	text-align: center;
+
+}

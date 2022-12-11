@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ES">
 <head>
-	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Web de información referente a la red de movilidad ferroviaria del área de Berlín.">
 	<meta name="author" content="Dídac Mangut Soria">
@@ -14,35 +14,29 @@
 	<title>S-Bahn</title>
 	</head>
 <body>
+
 	<header>
 		<div>
 			<nav>
-				<img src="src/logo.png" class="logos">
-			<ul>
+				<a href="index.html"><img src="src/logo.png" class="logos" alt="Imagen del logo de Deutsche bahn"></a>
+		
 				
-					<a class="dropbtn"><button id="myButton" class="dropbtn">Deutsche-Bahn</button></a>
+					<button id="myButton" class="dropbtn">Deutsche-Bahn</button>
 						<div id="myDropdown" class="dropdown-content">
 							<a href="https://assets.static-bahn.de/dam/jcr:71e54c1d-3607-43af-9093-8c60486465b4/220914_Liniennetz%20ICE%20IC%202023%20f%C3%BCr%20Buchungsstart.pdf">ICE</a>
 							<a href="https://www.bahn.com/es/trenes/cercanias" target="_blank">Regionalbahn</a>
 							<a href="https://www.raileurope.com/en/trains/eurocity" target="_blank">Intercity Eurocity</a>
 						</div>
-				<a href="index.html" class="dropbtn"><button class="dropbtn" id="myButton">Home</button></a>
-				<a href="files/sbahn.html" class="dropbtn"><button class="dropbtn" id="myButton">S-Bahn</button></a>
-				<a href="files/ubahn.html"><button class="dropbtn" id="myButton">U-Bahn</button></a>
+				<a href="index.html" class="dropbtn">Home</a>
+				<a href="files/sbahn.html" class="dropbtn">S-Bahn</a>
+				<a href="files/ubahn.html" class="dropbtn">U-Bahn</a>
 				
-				<script type="text/javascript">
-					
+				<script>
 					document.getElementById("myButton").onclick = function() {myFunction()};
 					function myFunction(){
 						document.getElementById("myDropdown").classList.toggle("show");
 						}
-
-
-
-				</script>
-					
-				
-			</ul>	
+				</script>			
 			</nav>
 		</div>
 	</header>
@@ -58,29 +52,29 @@
 	</div>
 
 	<div class="ex1"> 
-		<img src="src/ex1.png" id="f1">
+		<img src="src/ex1.png" id="f1" alt="Imagen con texto explicativo del sistema s-bahn">
 	</div>
 
-<section>
-	<div class="titulo1">
-		<h2>Mapa de líneas</h2>	
-	</div>
+	<section>
+		<div class="titulo1">
+			<h2>Mapa de líneas</h2>	
+		</div>
 
-	<div class="mapa">
-		<img src="src/m2.jpg" class="m1">
-	</div>
-</section>
+		<div class="mapa">
+			<img src="src/m2.jpg" class="m1" alt="imagen de un mapa de lineas ferroviarias suburbanas">
+		</div>
+	</section>
 
-<section>
-	<div class="horario">
-		<h2>Horario y frecuencia</h2>
-<pre style="font-size: 14px;">El horario del sistema oscila entre las cuatro de la mañana y la 1 de la madrugada del día 
-siguiente, aproximadamente, existiendo variaciones según la línea. 
+	<section>
+		<div class="horario">
+			<h2>Horario y frecuencia</h2>
+	<pre style="font-size: 14px;">El horario del sistema oscila entre las cuatro de la mañana y la 1 de la madrugada del día 
+	siguiente, aproximadamente, existiendo variaciones según la línea. 
 
-La frecuencia también varía entre 5 y 10 minutos en hora pico, hasta media hora en el horario normal.</pre>
+	La frecuencia también varía entre 5 y 10 minutos en hora pico, hasta media hora en el horario normal.</pre>
 	
-
-	<div class="modales">
+<!-- Parte de codigo para la ventana modal -->
+			<div class="modales">
 					
 					<dialog id="ms">
 						<blockquote style="text-align: center;">
@@ -88,40 +82,40 @@ La frecuencia también varía entre 5 y 10 minutos en hora pico, hasta media hor
 					</blockquote>
 						<button id="close1" onclick="document.getElementById('ms').close()">Cerrar</button>
 					</dialog>
-					<button id="show1" onclick="document.getElementById('ms').show()">Mostrar más</button>
-				</div>
-	</div>
-</section>
+					<button id="show4" onclick="document.getElementById('ms').show()">Mostrar más</button>
+			</div>
+		</div>
+	</section>
 
-
+<!-- Lista de los sistemas s-bahn de alemania -->
 
 	<div class="titulo1">
 		<h2>Sistemas S-Bahn de Alemania</h2>	
 	</div>
-<section>
+
 	<div class="lista_metros">
 		<ul class="metros">
-			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Bonn/Bonn-Stadtbahn-mapa.htm" target="_blank">Stadtbahn de Bonn</a></li>
-			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Colonia/Colonia-Stadtbahn-mapa.htm" target="_blank">Stadtbahn de Colonia</a></li>			
-			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Dortmund/Dortmund-Stadtbahn-mapa.htm" target="_blank">Stadtbahn de Dortmund</a></li>
-			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Dusseldorf/Dusseldorf-Stadtbahn-mapa.htm" target="_blank">Stadtbahn de Düsseldorf</a></li>
-			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Essen/Essen-Stadtbahn-mapa.htm" target="_blank">Stadtbahn de Essen</a></li>
-			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Stuttgart/Stuttgart-Stadtbahn-mapa.htm" target="_blank">Stadtbahn de Stuttgart</a></li>
+			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Bonn/Bonn-Stadtbahn-mapa.htm" target="_blank"><span class="color1">Stadtbahn de Bonn</span></a></li>
+			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Colonia/Colonia-Stadtbahn-mapa.htm" target="_blank"><span class="color1">Stadtbahn de Colonia</span></a></li>			
+			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Dortmund/Dortmund-Stadtbahn-mapa.htm" target="_blank"><span class="color1">Stadtbahn de Dortmund</span></a></li>
+			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Dusseldorf/Dusseldorf-Stadtbahn-mapa.htm" target="_blank"><span class="color1">Stadtbahn de Düsseldorf</span></a></li>
+			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Essen/Essen-Stadtbahn-mapa.htm" target="_blank"><span class="color1">Stadtbahn de Essen</span></a></li>
+			<li class="metros1"><a href="https://mapa-metro.com/es/Alemania/Stuttgart/Stuttgart-Stadtbahn-mapa.htm" target="_blank"><span class="color1">Stadtbahn de Stuttgart</span></a></li>
 			
 		</ul>	
 	</div>
-</section>
+
 	
 
-
+<!-- Pie de pagina con información básica -->
  <footer class="footer-distributed">
 
       <div class="footer-right">
 
-        <a href="https://www.youtube.com/user/DeutscheBahnKonzern"><img src="src/yt.png"></a>
-        <a href="https://twitter.com/DB_Bahn?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="src/tw.png"></a>
-        <a href="https://www.facebook.com/DBPersonenverkehr/"><img src="src/face.png"></a>
-        <a href="https://www.instagram.com/deutschebahn/?hl=es"><img src="src/insta.png"></a>
+        <a href="https://www.youtube.com/user/DeutscheBahnKonzern"><img src="src/yt.png" alt="Icono youtube"></a>
+        <a href="https://twitter.com/DB_Bahn?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="src/tw.png" alt="Icono twitter"></a>
+        <a href="https://www.facebook.com/DBPersonenverkehr/"><img src="src/face.png" alt="Icono facebook"></a>
+        <a href="https://www.instagram.com/deutschebahn/?hl=es"><img src="src/insta.png" alt="Icono instagram"></a>
 
       </div>
 
@@ -133,10 +127,8 @@ La frecuencia también varía entre 5 y 10 minutos en hora pico, hasta media hor
           <a href="https://bmdv.bund.de/EN/Home/home.html" target="_blank">Ministerio federal de transportes</a>
 
           <a href="https://bmdv.bund.de/EN/Meta/Legal-Notice-Terms-and-Conditions/legal-notice-terms-and-conditions.html">Condiciones legales</a>
-
-          <a href="#">Protección de datos</a>
        
-          <a href="form.html">Contacto</a>
+          <a href="files/form.html">Formulario de incidencias</a>
         </p>
 
         <p>Deutsche Bahn &copy; 2022</p>

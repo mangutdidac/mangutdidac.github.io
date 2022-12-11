@@ -1,6 +1,7 @@
-span.colort1{font-size: 0.9em;}
+span.colort1{font-size: 0.7em;}
 ul{display: flex;}
 div.titulo1 h2, h3{font-size: 1em;}
+div.horario h2{font-size: 19px;}
 div.titulo1{margin-top: 50%;}
 img.aimg{
 	padding: 0%;
@@ -10,13 +11,15 @@ a, .dropbtn{
 	width: 100%;
 	font-weight: 500;
 	padding:10px 5px;
+	font-size: 14px;
 }
 div.body1, div.body2{
 	width: 90%;
 	margin-left: 5%;
 }
 #f1{
-	width: 95%;
+	border-image: url(../src/border.png) 20;
+	width: 80%;
 	margin-left: 2.5%;
 }
 div.mapa{
@@ -48,19 +51,22 @@ div.horario{
 	margin-left: 12%;
 }
 pre{display: none;}
-#show1{
-	margin-left: 0%;
-	margin-bottom: 5%;
-}
 ul.metros{display: inline-block;}
 li.metros1{padding-right: 20%;}
 #myDropdown{
 	margin-top: 14%;
 	width:29%;
-	margin-left: 1%;
+	margin-left: 22.5%;
 	background-color: #e9e9ed;
 	height: 14%;
 }
 .dropdown-content a{
 	font-size: 14px;
 }
+.dropdown-content{
+	bottom: 79.2%
+}
+form{width: 100%;margin-left: 0%;}
+fieldset{padding: 5%;}
+input.benviar{margin-left: 47%;}
+.volver{padding: 5px;margin-left: 29%;margin-top: 5%; width:35%;}
